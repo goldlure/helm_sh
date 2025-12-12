@@ -2,14 +2,13 @@ name: Check Blog Posts
 
 on:
   schedule:
-    # Run twice a day at 9 AM and 9 PM UTC
-    - cron: '0 9,21 * * *'
+    - cron: '0 9,21 * * *'   # or your hourly cron
   workflow_dispatch:
 
 jobs:
   check-blogs:
     runs-on: ubuntu-latest
-    
+
     steps:
     - name: Checkout code
       uses: actions/checkout@v4
@@ -22,13 +21,13 @@ jobs:
     - name: Install dependencies
       run: pip install requests beautifulsoup4 lxml
 
-    # ⬇️ Download previous bot_state.json BEFORE running script
+    # ⬇️ Download previous state (NEW v4 syntax)
     - name: Download previous state
-      uses: actions/download-artifact@v3
-      continue-on-error: true
+      uses: actions/download-artifact@v4
       with:
         name: bot-state
         path: .
+      continue-on-error: true
 
     # ⬇️ Run your script
     - name: Check for new posts
@@ -37,9 +36,9 @@ jobs:
         CHAT_ID: ${{ secrets.CHAT_ID }}
       run: python check_once.py
 
-    # ⬇️ Upload UPDATED state so next run has correct memory
+    # ⬇️ Upload updated state (NEW v4 syntax)
     - name: Upload updated state
-      uses: actions/upload-artifact@v3
+      uses: actions/upload-artifact@v4
       with:
         name: bot-state
         path: bot_state.json
