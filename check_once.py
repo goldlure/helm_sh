@@ -1,24 +1,39 @@
 import os
 import json
 import requests
-from datetime import datetime
+import feedparser
 from bs4 import BeautifulSoup
 
 # =====================
-# Configuration
+# Config
 # =====================
 BOT_TOKEN = os.environ.get("BOT_TOKEN")
 CHAT_ID = os.environ.get("CHAT_ID")
 STATE_FILE = "state.json"
+DEBUG = os.environ.get("DEBUG", "false").lower() == "true"
 
 BLOG_SOURCES = [
     {
         "name": "Helm",
         "url": "https://helm.sh/blog",
+        "rss": "https://helm.sh/rss.xml",
         "icon": "⚓",
         "parser": "helm_parser",
-    },
+    }
 ]
+
+
+# =====================
+# Utilities
+# =====================
+def log(msg):
+    if DEBUG:
+        print(f"[DEBUG] {msg}")
+
+
+def normalize_url(url: str) -> str:
+    return url.rstrip("/")
+
 
 # =====================
 # Telegram
@@ -31,38 +46,23 @@ def send_telegram_message(text, parse_mode="HTML"):
         "parse_mode": parse_mode,
         "disable_web_page_preview": False,
     }
-
-    try:
-        r = requests.post(url, json=payload, timeout=10)
-        r.raise_for_status()
-        return True
-    except Exception as e:
-        print(f"Telegram error: {e}")
-        return False
+    r = requests.post(url, json=payload, timeout=10)
+    r.raise_for_status()
 
 
 # =====================
-# State handling
+# State
 # =====================
 def load_state():
     if not os.path.exists(STATE_FILE):
         return {}
-    try:
-        with open(STATE_FILE, "r") as f:
-            return json.load(f)
-    except Exception as e:
-        print(f"Failed to load state: {e}")
-        return {}
+    with open(STATE_FILE, "r") as f:
+        return json.load(f)
 
 
 def save_state(state):
-    try:
-        with open(STATE_FILE, "w") as f:
-            json.dump(state, f, indent=2)
-        return True
-    except Exception as e:
-        print(f"Failed to save state: {e}")
-        return False
+    with open(STATE_FILE, "w") as f:
+        json.dump(state, f, indent=2)
 
 
 # =====================
@@ -70,68 +70,70 @@ def save_state(state):
 # =====================
 def helm_parser(soup, base_url):
     posts = []
-    articles = soup.find_all("article")
-
-    for article in articles:
+    for article in soup.find_all("article"):
         h2 = article.find("h2")
         if not h2:
             continue
-
         a = h2.find("a")
         if not a:
             continue
 
-        link = a.get("href")
+        link = a["href"]
         if link.startswith("/"):
             link = base_url + link
 
-        date_elem = article.find("time")
-        date = date_elem.get_text(strip=True) if date_elem else "Unknown"
-
-        excerpt_elem = article.find("p")
-        excerpt = excerpt_elem.get_text(strip=True)[:200] if excerpt_elem else ""
+        excerpt = ""
+        p = article.find("p")
+        if p:
+            excerpt = p.get_text(strip=True)[:200]
 
         posts.append(
             {
                 "title": a.get_text(strip=True),
-                "link": link,
-                "date": date,
+                "link": normalize_url(link),
                 "excerpt": excerpt,
             }
         )
-
     return posts
 
 
-def fetch_blog_posts(source):
+def fetch_html_posts(source):
+    r = requests.get(source["url"], timeout=10)
+    r.raise_for_status()
+    soup = BeautifulSoup(r.content, "html.parser")
+    base_url = "/".join(source["url"].split("/")[:3])
+    return globals()[source["parser"]](soup, base_url)
+
+
+def fetch_rss_posts(source):
+    feed = feedparser.parse(source["rss"])
+    posts = []
+    for e in feed.entries:
+        posts.append(
+            {
+                "title": e.title,
+                "link": normalize_url(e.link),
+                "excerpt": e.summary[:200] if "summary" in e else "",
+            }
+        )
+    return posts
+
+
+def fetch_posts(source):
     try:
-        r = requests.get(source["url"], timeout=10)
-        r.raise_for_status()
-
-        soup = BeautifulSoup(r.content, "html.parser")
-        parser = globals().get(source.get("parser"), None)
-        base_url = "/".join(source["url"].split("/")[:3])
-
-        posts = parser(soup, base_url)
-        for p in posts:
-            p["source"] = source["name"]
-            p["icon"] = source.get("icon", "📰")
-
-        return posts
-
+        log("Trying HTML parser")
+        return fetch_html_posts(source)
     except Exception as e:
-        print(f"Fetch error ({source['name']}): {e}")
-        return []
+        log(f"HTML failed ({e}), falling back to RSS")
+        return fetch_rss_posts(source)
 
 
 # =====================
 # Formatting
 # =====================
-def format_post_message(post):
+def format_post(post, source):
     return (
-        f"{post['icon']} <b>{post['title']}</b>\n\n"
-        f"📅 {post['date']}\n"
-        f"🔖 {post['source']}\n\n"
+        f"{source['icon']} <b>{post['title']}</b>\n\n"
         f"{post['excerpt']}...\n\n"
         f"🔗 <a href='{post['link']}'>Read more</a>"
     )
@@ -145,40 +147,39 @@ def main():
         raise RuntimeError("BOT_TOKEN and CHAT_ID must be set")
 
     state = load_state()
-    print(f"Loaded state: {state}")
+    log(f"Loaded state: {state}")
 
-    new_state = {}
-    all_new_posts = []
+    updated_state = {}
+    outgoing = []
 
     for source in BLOG_SOURCES:
         name = source["name"]
-        last_seen_url = state.get(name)
+        last_seen = normalize_url(state.get(name, "")) if state.get(name) else None
 
-        posts = fetch_blog_posts(source)
-        if not posts:
-            continue
+        posts = fetch_posts(source)
+        log(f"Fetched {len(posts)} posts")
 
         new_posts = []
 
-        for post in posts:
-            if post["link"] == last_seen_url:
+        for post in posts:  # newest → oldest
+            if last_seen and post["link"] == last_seen:
+                log("Reached last-seen post, stopping")
                 break
             new_posts.append(post)
 
-        if posts:
-            new_state[name] = posts[0]["link"]
+        if new_posts:
+            updated_state[name] = posts[0]["link"]
 
-        all_new_posts.extend(reversed(new_posts))
-
+        outgoing.extend(reversed(new_posts))
         print(f"{name}: {len(new_posts)} new post(s)")
 
-    for post in all_new_posts:
-        if send_telegram_message(format_post_message(post)):
-            print(f"Sent: {post['title']}")
+    for post in outgoing:
+        send_telegram_message(format_post(post, source))
+        print(f"Sent: {post['title']}")
 
-    if new_state:
-        save_state(new_state)
-        print(f"State updated: {new_state}")
+    if updated_state:
+        save_state(updated_state)
+        print(f"State updated: {updated_state}")
 
 
 if __name__ == "__main__":
