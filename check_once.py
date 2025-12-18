@@ -1,4 +1,5 @@
 import os
+import json
 import requests
 import re
 from datetime import datetime
@@ -18,91 +19,6 @@ BLOG_SOURCES = [
     },
 ]
 
-def parse_date_from_message(text):
-    """Extract and parse date from Telegram message format: 📅 November 17, 2025"""
-    match = re.search(r'📅\s+([A-Za-z]+\s+\d{1,2},\s+\d{4})', text)
-    if match:
-        try:
-            date_str = match.group(1)
-            date_obj = datetime.strptime(date_str, '%B %d, %Y')
-            return date_obj.strftime('%Y-%m-%d')
-        except ValueError:
-            pass
-    return None
-
-def get_recent_bot_messages(limit=1):
-    """Fetch recent messages from the bot in the chat"""
-    url = f"https://api.telegram.org/bot{BOT_TOKEN}/getUpdates"
-    
-    try:
-        response = requests.get(url, params={'limit': limit}, timeout=10)
-        response.raise_for_status()
-        data = response.json()
-        
-        if not data.get('ok'):
-            print("Failed to fetch updates from Telegram")
-            return []
-        
-        print(f"DEBUG: Received {len(data.get('result', []))} updates from Telegram")
-        
-        messages = []
-        for update in data.get('result', []):
-            message = update.get('message', {})
-            chat_id = message.get('chat', {}).get('id')
-            is_bot = message.get('from', {}).get('is_bot')
-            
-            print(f"DEBUG: Update - chat_id={chat_id}, target={CHAT_ID}, is_bot={is_bot}")
-            
-            # Only get messages sent by the bot to our chat
-            if chat_id == int(CHAT_ID) and is_bot:
-                msg_text = message.get('text', '')
-                print(f"DEBUG: Found bot message: {msg_text[:100]}...")
-                messages.append(msg_text)
-        
-        return messages
-    except Exception as e:
-        print(f"Error fetching bot messages: {e}")
-        return []
-
-def extract_source_and_date_from_message(message):
-    """Extract blog source name and date from a Telegram message"""
-    # Extract source: 🔖 Helm
-    source_match = re.search(r'🔖\s+([^\n]+)', message)
-    source = source_match.group(1).strip() if source_match else None
-    
-    # Extract date
-    date = parse_date_from_message(message)
-    
-    return source, date
-
-def get_last_seen_dates():
-    """Get the last seen dates by fetching recent bot messages from Telegram"""
-    print("Fetching last seen dates from Telegram history...")
-    
-    messages = get_recent_bot_messages(limit=1)
-    
-    if not messages:
-        print("No messages found. Will send all posts.")
-        return {}
-    
-    print(f"Found {len(messages)} bot message(s)")
-    
-    # Extract the most recent date for each source
-    last_dates = {}
-    
-    for message in messages:
-        source, date = extract_source_and_date_from_message(message)
-        if source and date:
-            # Keep the most recent date for each source
-            if source not in last_dates or date > last_dates[source]:
-                last_dates[source] = date
-    
-    print(f"Extracted dates for {len(last_dates)} sources:")
-    for source, date in last_dates.items():
-        print(f"  - {source}: {date}")
-    
-    return last_dates
-
 def send_telegram_message(text, parse_mode='HTML'):
     """Send a message via Telegram Bot API"""
     url = f"https://api.telegram.org/bot{BOT_TOKEN}/sendMessage"
@@ -121,6 +37,56 @@ def send_telegram_message(text, parse_mode='HTML'):
     except Exception as e:
         print(f"Error sending message: {e}")
         return False
+
+def send_state_message(last_seen_dates):
+    """Send a hidden state message to store the last seen dates"""
+    # Use a special format that we can parse later
+    # Using zero-width characters to make it less visible
+    state_json = json.dumps(last_seen_dates)
+    message = f"🤖 <code>STATE:{state_json}</code>"
+    
+    return send_telegram_message(message)
+
+def get_last_state_from_messages():
+    """Fetch recent messages and extract the last state"""
+    url = f"https://api.telegram.org/bot{BOT_TOKEN}/getUpdates"
+    
+    try:
+        # Get updates without offset to see all unacknowledged messages
+        response = requests.get(url, params={'limit': 100}, timeout=10)
+        response.raise_for_status()
+        data = response.json()
+        
+        if not data.get('ok'):
+            print("Failed to fetch updates from Telegram")
+            return {}
+        
+        print(f"DEBUG: Received {len(data.get('result', []))} updates from Telegram")
+        
+        # Look for state messages (search in reverse to find most recent)
+        for update in reversed(data.get('result', [])):
+            message = update.get('message', {})
+            text = message.get('text', '')
+            
+            # Look for our state message format
+            if 'STATE:' in text:
+                try:
+                    # Extract JSON from the message
+                    match = re.search(r'STATE:(\{.*\})', text)
+                    if match:
+                        state_data = json.loads(match.group(1))
+                        print(f"DEBUG: Found state message: {state_data}")
+                        return state_data
+                except (json.JSONDecodeError, AttributeError) as e:
+                    print(f"DEBUG: Failed to parse state message: {e}")
+                    continue
+        
+        print("DEBUG: No state message found in updates")
+        return {}
+        
+    except Exception as e:
+        print(f"Error fetching updates: {e}")
+        return {}
 
 def parse_blog_date(date_str):
     """Parse blog date string to YYYY-MM-DD format"""
@@ -257,10 +223,17 @@ def main():
         print("ERROR: BOT_TOKEN and CHAT_ID must be set!")
         return
     
-    # Get last seen dates from Telegram
-    last_seen_dates = get_last_seen_dates()
+    # Get last seen dates from previous state message
+    print("Fetching state from Telegram messages...")
+    last_seen_dates = get_last_state_from_messages()
+    
+    if last_seen_dates:
+        print(f"Loaded state: {last_seen_dates}")
+    else:
+        print("No previous state found. Will send all posts.")
     
     all_new_posts = []
+    updated_dates = {}
     
     for source in BLOG_SOURCES:
         source_name = source['name']
@@ -271,6 +244,7 @@ def main():
             continue
         
         new_posts = []
+        latest_date = last_seen_date
         
         for post in posts:
             post_date = parse_blog_date(post['date'])
@@ -280,11 +254,19 @@ def main():
                 print(f"Warning: Could not parse date '{post['date']}' for post: {post['title']}")
                 continue
             
+            # Update latest date seen
+            if not latest_date or post_date > latest_date:
+                latest_date = post_date
+            
             print(f"DEBUG: Post '{post['title']}' has date {post_date}, last_seen={last_seen_date}")
             
             # Check if this is a new post
             if not last_seen_date or post_date > last_seen_date:
                 new_posts.append(post)
+        
+        # Store the latest date for this source
+        if latest_date:
+            updated_dates[source_name] = latest_date
         
         all_new_posts.extend(new_posts)
         
@@ -296,6 +278,13 @@ def main():
         message = format_post_message(post)
         if send_telegram_message(message):
             print(f"Sent: {post['title']}")
+    
+    # Send state message to preserve for next run
+    if updated_dates:
+        if send_state_message(updated_dates):
+            print(f"Saved state: {updated_dates}")
+        else:
+            print("Failed to save state message")
     
     print(f"Check complete. {len(all_new_posts)} new post(s)")
 
