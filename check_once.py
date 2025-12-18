@@ -43,13 +43,21 @@ def get_recent_bot_messages(limit=1):
             print("Failed to fetch updates from Telegram")
             return []
         
+        print(f"DEBUG: Received {len(data.get('result', []))} updates from Telegram")
+        
         messages = []
         for update in data.get('result', []):
             message = update.get('message', {})
+            chat_id = message.get('chat', {}).get('id')
+            is_bot = message.get('from', {}).get('is_bot')
+            
+            print(f"DEBUG: Update - chat_id={chat_id}, target={CHAT_ID}, is_bot={is_bot}")
+            
             # Only get messages sent by the bot to our chat
-            if (message.get('chat', {}).get('id') == int(CHAT_ID) and 
-                message.get('from', {}).get('is_bot')):
-                messages.append(message.get('text', ''))
+            if chat_id == int(CHAT_ID) and is_bot:
+                msg_text = message.get('text', '')
+                print(f"DEBUG: Found bot message: {msg_text[:100]}...")
+                messages.append(msg_text)
         
         return messages
     except Exception as e:
@@ -271,6 +279,8 @@ def main():
                 # If we can't parse the date, skip it to be safe
                 print(f"Warning: Could not parse date '{post['date']}' for post: {post['title']}")
                 continue
+            
+            print(f"DEBUG: Post '{post['title']}' has date {post_date}, last_seen={last_seen_date}")
             
             # Check if this is a new post
             if not last_seen_date or post_date > last_seen_date:
