@@ -19,7 +19,32 @@ BLOG_SOURCES = [
         "rss": "https://helm.sh/rss.xml",
         "icon": "⚓",
         "parser": "helm_parser",
-    }
+    },
+    {
+        "name": "Bleeping Computer",
+        "rss": "https://www.bleepingcomputer.com/feed/",
+        "icon": "🔔",
+    },
+    {
+        "name": "The Hacker News",
+        "rss": "https://feeds.feedburner.com/TheHackersNews",
+        "icon": "📰",
+    },
+    {
+        "name": "Socket.dev",
+        "rss": "https://socket.dev/blog/rss.xml",
+        "icon": "🔌",
+    },
+    {
+        "name": "Wiz",
+        "rss": "https://www.wiz.io/blog/rss.xml",
+        "icon": "🧙",
+    },
+    {
+        "name": "StepSecurity",
+        "rss": "https://www.stepsecurity.io/blog/rss.xml",
+        "icon": "🛡️",
+    },
 ]
 
 
@@ -120,6 +145,10 @@ def fetch_rss_posts(source):
 
 
 def fetch_posts(source):
+    # RSS-only sources (no "parser" key)
+    if "parser" not in source:
+        log(f"Using RSS for {source['name']}")
+        return fetch_rss_posts(source)
     try:
         log("Trying HTML parser")
         return fetch_html_posts(source)
@@ -150,14 +179,14 @@ def main():
     log(f"Loaded state: {state}")
 
     updated_state = {}
-    outgoing = []
+    outgoing = []  # list of (post, source) tuples
 
     for source in BLOG_SOURCES:
         name = source["name"]
         last_seen = normalize_url(state.get(name, "")) if state.get(name) else None
 
         posts = fetch_posts(source)
-        log(f"Fetched {len(posts)} posts")
+        log(f"[{name}] Fetched {len(posts)} posts")
 
         new_posts = []
 
@@ -170,10 +199,11 @@ def main():
         if new_posts:
             updated_state[name] = posts[0]["link"]
 
-        outgoing.extend(reversed(new_posts))
+        # Fix: store source alongside each post
+        outgoing.extend((post, source) for post in reversed(new_posts))
         print(f"{name}: {len(new_posts)} new post(s)")
 
-    for post in outgoing:
+    for post, source in outgoing:
         send_telegram_message(format_post(post, source))
         print(f"Sent: {post['title']}")
 
