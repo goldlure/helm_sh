@@ -1,5 +1,6 @@
 {
-  "Bleeping Computer": "https://www.bleepingcomputer.com/news/artificial-intelligence/openai-rolls-out-chatgpt-library-to-store-your-personal-files",
-  "The Hacker News": "https://thehackernews.com/2026/03/us-sentences-russian-hacker-to-675.html",
-  "StepSecurity": "https://www.stepsecurity.io/blog/checkmarx-kics-github-action-compromised-malware-injected-in-all-git-tags"
+  "Helm": "https://helm.sh/blog/helm-4-released",
+  "Bleeping Computer": "https://www.bleepingcomputer.com/news/security/fcc-bans-new-routers-made-outside-the-usa-over-security-risks",
+  "The Hacker News": "https://thehackernews.com/2026/03/teampcp-backdoors-litellm-versions.html",
+  "StepSecurity": "https://www.stepsecurity.io/blog/litellm-credential-stealer-hidden-in-pypi-wheel"
 }
