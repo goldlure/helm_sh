@@ -208,8 +208,9 @@ def main():
         print(f"Sent: {post['title']}")
 
     if updated_state:
-        save_state(updated_state)
-        print(f"State updated: {updated_state}")
+        merged_state = {**state, **updated_state}  # keep existing, overlay new
+        save_state(merged_state)
+        print(f"State updated: {merged_state}")
 
 
 if __name__ == "__main__":
