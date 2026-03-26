@@ -1,6 +1,4 @@
 {
-  "Helm": "https://helm.sh/blog/helm-4-released",
-  "Bleeping Computer": "https://www.bleepingcomputer.com/news/security/bubble-ai-app-builder-abused-to-steal-microsoft-account-credentials",
-  "The Hacker News": "https://thehackernews.com/2026/03/leakbase-admin-arrested-in-russia-over.html",
-  "StepSecurity": "https://www.stepsecurity.io/blog/litellm-credential-stealer-hidden-in-pypi-wheel"
+  "Bleeping Computer": "https://www.bleepingcomputer.com/news/security/github-adds-ai-powered-bug-detection-to-expand-security-coverage",
+  "The Hacker News": "https://thehackernews.com/2026/03/webrtc-skimmer-bypasses-csp-to-steal.html"
 }
