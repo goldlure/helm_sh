@@ -1,0 +1,34 @@
+[
+  {
+    "name": "Helm",
+    "url": "https://helm.sh/blog",
+    "rss": "https://helm.sh/rss.xml",
+    "icon": "⚓",
+    "parser": "helm_parser"
+  },
+  {
+    "name": "Bleeping Computer",
+    "rss": "https://www.bleepingcomputer.com/feed/",
+    "icon": "🔔"
+  },
+  {
+    "name": "The Hacker News",
+    "rss": "https://feeds.feedburner.com/TheHackersNews",
+    "icon": "📰"
+  },
+  {
+    "name": "Aqua Security",
+    "rss": "https://www.aquasec.com/feed/",
+    "icon": "🐳"
+  },
+  {
+    "name": "Krebs on Security",
+    "rss": "https://krebsonsecurity.com/feed/",
+    "icon": "🕵️"
+  },
+  {
+    "name": "StepSecurity",
+    "rss": "https://www.stepsecurity.io/blog/rss.xml",
+    "icon": "🛡️"
+  }
+]
