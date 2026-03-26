@@ -4,5 +4,7 @@
   "The Hacker News": "https://thehackernews.com/2026/03/webrtc-skimmer-bypasses-csp-to-steal.html",
   "Socket.dev": "",
   "Wiz": "",
-  "StepSecurity": "https://www.stepsecurity.io/blog/litellm-credential-stealer-hidden-in-pypi-wheel"
+  "StepSecurity": "https://www.stepsecurity.io/blog/litellm-credential-stealer-hidden-in-pypi-wheel",
+  "Aqua Security": "https://www.aquasec.com/blog/trivy-supply-chain-attack-what-you-need-to-know",
+  "Krebs on Security": "https://krebsonsecurity.com/2026/03/canisterworm-springs-wiper-attack-targeting-iran"
 }
