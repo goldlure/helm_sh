@@ -10,42 +10,8 @@ from bs4 import BeautifulSoup
 BOT_TOKEN = os.environ.get("BOT_TOKEN")
 CHAT_ID = os.environ.get("CHAT_ID")
 STATE_FILE = "state.json"
+SOURCES_FILE = "sources.json"
 DEBUG = os.environ.get("DEBUG", "false").lower() == "true"
-
-BLOG_SOURCES = [
-    {
-        "name": "Helm",
-        "url": "https://helm.sh/blog",
-        "rss": "https://helm.sh/rss.xml",
-        "icon": "⚓",
-        "parser": "helm_parser",
-    },
-    {
-        "name": "Bleeping Computer",
-        "rss": "https://www.bleepingcomputer.com/feed/",
-        "icon": "🔔",
-    },
-    {
-        "name": "The Hacker News",
-        "rss": "https://feeds.feedburner.com/TheHackersNews",
-        "icon": "📰",
-    },
-    {
-        "name": "Socket.dev",
-        "rss": "https://socket.dev/blog/rss.xml",
-        "icon": "🔌",
-    },
-    {
-        "name": "Wiz",
-        "rss": "https://www.wiz.io/blog/rss.xml",
-        "icon": "🧙",
-    },
-    {
-        "name": "StepSecurity",
-        "rss": "https://www.stepsecurity.io/blog/rss.xml",
-        "icon": "🛡️",
-    },
-]
 
 
 # =====================
@@ -58,6 +24,11 @@ def log(msg):
 
 def normalize_url(url: str) -> str:
     return url.rstrip("/")
+
+
+def load_sources():
+    with open(SOURCES_FILE, "r") as f:
+        return json.load(f)
 
 
 # =====================
@@ -145,7 +116,6 @@ def fetch_rss_posts(source):
 
 
 def fetch_posts(source):
-    # RSS-only sources (no "parser" key)
     if "parser" not in source:
         log(f"Using RSS for {source['name']}")
         return fetch_rss_posts(source)
@@ -175,13 +145,14 @@ def main():
     if not BOT_TOKEN or not CHAT_ID:
         raise RuntimeError("BOT_TOKEN and CHAT_ID must be set")
 
+    sources = load_sources()
     state = load_state()
     log(f"Loaded state: {state}")
 
     updated_state = {}
     outgoing = []  # list of (post, source) tuples
 
-    for source in BLOG_SOURCES:
+    for source in sources:
         name = source["name"]
         last_seen = normalize_url(state.get(name, "")) if state.get(name) else None
 
@@ -199,7 +170,6 @@ def main():
         if new_posts:
             updated_state[name] = posts[0]["link"]
 
-        # Fix: store source alongside each post
         outgoing.extend((post, source) for post in reversed(new_posts))
         print(f"{name}: {len(new_posts)} new post(s)")
 
@@ -208,7 +178,7 @@ def main():
         print(f"Sent: {post['title']}")
 
     if updated_state:
-        merged_state = {**state, **updated_state}  # keep existing, overlay new
+        merged_state = {**state, **updated_state}
         save_state(merged_state)
         print(f"State updated: {merged_state}")
 
