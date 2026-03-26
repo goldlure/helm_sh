@@ -3,6 +3,7 @@ import json
 import requests
 import feedparser
 import html
+import time
 from bs4 import BeautifulSoup
 
 # =====================
@@ -182,6 +183,7 @@ def main():
     for post, source in outgoing:
         send_telegram_message(format_post(post, source))
         print(f"Sent: {post['title']}")
+        time.sleep(1)
 
     if updated_state:
         merged_state = {**state, **updated_state}
