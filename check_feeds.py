@@ -44,8 +44,15 @@ def send_telegram_message(text, parse_mode="HTML"):
         "parse_mode": parse_mode,
         "disable_web_page_preview": False,
     }
-    r = requests.post(url, json=payload, timeout=10)
-    r.raise_for_status()
+    for attempt in range(3):
+        r = requests.post(url, json=payload, timeout=10)
+        if r.status_code == 429:
+            wait = r.json().get("parameters", {}).get("retry_after", 5)
+            print(f"Rate limited, waiting {wait}s...")
+            time.sleep(wait)
+            continue
+        r.raise_for_status()
+        return
 
 
 # =====================
@@ -183,7 +190,7 @@ def main():
     for post, source in outgoing:
         send_telegram_message(format_post(post, source))
         print(f"Sent: {post['title']}")
-        time.sleep(1)
+        time.sleep(3)
 
     if updated_state:
         merged_state = {**state, **updated_state}
