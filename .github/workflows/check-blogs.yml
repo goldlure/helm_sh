@@ -32,7 +32,7 @@ jobs:
           BOT_TOKEN: ${{ secrets.BOT_TOKEN }}
           CHAT_ID: ${{ secrets.CHAT_ID }}
           DEBUG: "true"
-        run: python check_once.py
+        run: python check_feeds.py
 
       - name: Commit state
         run: |
