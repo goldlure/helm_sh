@@ -106,11 +106,13 @@ def fetch_rss_posts(source):
     feed = feedparser.parse(source["rss"])
     posts = []
     for e in feed.entries:
+        raw_summary = e.summary if "summary" in e else ""
+        excerpt = BeautifulSoup(raw_summary, "html.parser").get_text(strip=True)[:200]
         posts.append(
             {
                 "title": e.title,
                 "link": normalize_url(e.link),
-                "excerpt": e.summary[:200] if "summary" in e else "",
+                "excerpt": excerpt,
             }
         )
     return posts
