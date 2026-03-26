@@ -8,13 +8,13 @@ from bs4 import BeautifulSoup
 # =====================
 # Config
 # =====================
+MAX_NEW_POSTS = 5 
 BOT_TOKEN = os.environ.get("BOT_TOKEN")
 CHAT_ID = os.environ.get("CHAT_ID")
 STATE_FILE = "state.json"
 SOURCES_FILE = "sources.json"
 DEBUG = os.environ.get("DEBUG", "false").lower() == "true"
-
-
+ 
 # =====================
 # Utilities
 # =====================
@@ -171,7 +171,8 @@ def main():
                 log("Reached last-seen post, stopping")
                 break
             new_posts.append(post)
-
+        new_posts = new_posts[:MAX_NEW_POSTS]
+        
         if new_posts:
             updated_state[name] = posts[0]["link"]
 
