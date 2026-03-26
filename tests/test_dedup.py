@@ -1,4 +1,4 @@
-from check_once import normalize_url
+from check_feeds import normalize_url
 
 def test_newest_seen_means_no_new_posts():
     posts = [
