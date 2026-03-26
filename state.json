@@ -1,4 +1,8 @@
 {
+  "Helm": "https://helm.sh/blog/helm-4-released",
   "Bleeping Computer": "https://www.bleepingcomputer.com/news/security/github-adds-ai-powered-bug-detection-to-expand-security-coverage",
-  "The Hacker News": "https://thehackernews.com/2026/03/webrtc-skimmer-bypasses-csp-to-steal.html"
+  "The Hacker News": "https://thehackernews.com/2026/03/webrtc-skimmer-bypasses-csp-to-steal.html",
+  "Socket.dev": "",
+  "Wiz": "",
+  "StepSecurity": "https://www.stepsecurity.io/blog/trivy-compromised-a-second-time---malicious-v0-69-4-release"
 }
