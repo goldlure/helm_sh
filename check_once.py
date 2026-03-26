@@ -2,6 +2,7 @@ import os
 import json
 import requests
 import feedparser
+import html
 from bs4 import BeautifulSoup
 
 # =====================
@@ -131,9 +132,11 @@ def fetch_posts(source):
 # Formatting
 # =====================
 def format_post(post, source):
+    title = html.escape(post['title'])
+    excerpt = html.escape(post['excerpt'])
     return (
-        f"{source['icon']} <b>{post['title']}</b>\n\n"
-        f"{post['excerpt']}...\n\n"
+        f"{source['icon']} <b>{title}</b>\n\n"
+        f"{excerpt}...\n\n"
         f"🔗 <a href='{post['link']}'>Read more</a>"
     )
 
