@@ -1,8 +1,8 @@
 {
   "Helm": "https://helm.sh/blog/helm-4-released",
-  "Bleeping Computer": "https://www.bleepingcomputer.com/news/security/claude-code-leak-used-to-push-infostealer-malware-on-github",
-  "The Hacker News": "https://thehackernews.com/2026/04/hackers-exploit-cve-2025-55182-to.html",
+  "Bleeping Computer": "https://www.bleepingcomputer.com/news/security/man-admits-to-extortion-plot-locking-coworkers-out-of-thousands-of-windows-devices",
+  "The Hacker News": "https://thehackernews.com/2026/04/new-sparkcat-variant-in-ios-android.html",
   "Aqua Security": "https://www.aquasec.com/blog/trivy-supply-chain-attack-what-you-need-to-know",
   "Krebs on Security": "https://krebsonsecurity.com/2026/03/canisterworm-springs-wiper-attack-targeting-iran",
-  "StepSecurity": "https://www.stepsecurity.io/blog/axios-compromised-on-npm-malicious-versions-drop-remote-access-trojan"
+  "StepSecurity": "https://www.stepsecurity.io/blog/10-layers-deep-how-stepsecurity-stops-teampcps-trivy-supply-chain-attack-on-github-actions"
 }
