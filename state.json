@@ -1,8 +1,8 @@
 {
   "Helm": "https://helm.sh/blog/helm-4-released",
-  "Bleeping Computer": "https://www.bleepingcomputer.com/news/security/german-authorities-identify-revil-and-gangcrab-ransomware-bosses",
-  "The Hacker News": "https://thehackernews.com/2026/04/china-linked-storm-1175-exploits-zero.html",
+  "Bleeping Computer": "https://www.bleepingcomputer.com/news/security/fbi-americans-lost-a-record-21-billion-to-cybercrime-last-year",
+  "The Hacker News": "https://thehackernews.com/2026/04/russian-state-linked-apt28-exploits.html",
   "Aqua Security": "https://www.aquasec.com/blog/trivy-supply-chain-attack-what-you-need-to-know",
-  "Krebs on Security": "https://krebsonsecurity.com/2026/04/germany-doxes-unkn-head-of-ru-ransomware-gangs-revil-gandcrab",
-  "StepSecurity": "https://www.stepsecurity.io/blog/behind-the-scenes-how-stepsecurity-detected-and-helped-remediate-the-largest-npm-supply-chain-attack"
+  "Krebs on Security": "https://krebsonsecurity.com/2026/04/russia-hacked-routers-to-steal-microsoft-office-tokens",
+  "StepSecurity": "https://www.stepsecurity.io/blog/axios-compromised-on-npm-malicious-versions-drop-remote-access-trojan"
 }
