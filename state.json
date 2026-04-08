@@ -1,8 +1,8 @@
 {
   "Helm": "https://helm.sh/blog/helm-4-released",
-  "Bleeping Computer": "https://www.bleepingcomputer.com/news/security/fbi-americans-lost-a-record-21-billion-to-cybercrime-last-year",
-  "The Hacker News": "https://thehackernews.com/2026/04/russian-state-linked-apt28-exploits.html",
+  "Bleeping Computer": "https://www.bleepingcomputer.com/news/microsoft/microsoft-rolls-out-fix-for-broken-windows-start-menu-search",
+  "The Hacker News": "https://thehackernews.com/2026/04/n-korean-hackers-spread-1700-malicious.html",
   "Aqua Security": "https://www.aquasec.com/blog/trivy-supply-chain-attack-what-you-need-to-know",
   "Krebs on Security": "https://krebsonsecurity.com/2026/04/russia-hacked-routers-to-steal-microsoft-office-tokens",
-  "StepSecurity": "https://www.stepsecurity.io/blog/axios-compromised-on-npm-malicious-versions-drop-remote-access-trojan"
+  "StepSecurity": "https://www.stepsecurity.io/blog/velora-dex-sdk-compromised-on-npm-malicious-version-drops-macos-backdoor-via-launchctl-persistence"
 }
