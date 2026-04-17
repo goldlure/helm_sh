@@ -1,7 +1,7 @@
 {
   "Helm": "https://helm.sh/blog/helm-4-released",
-  "Bleeping Computer": "https://www.bleepingcomputer.com/news/microsoft/microsoft-warns-of-reboot-loops-affecting-some-domain-controllers",
-  "The Hacker News": "https://thehackernews.com/2026/04/nist-limits-cve-enrichment-after-263.html",
+  "Bleeping Computer": "https://www.bleepingcomputer.com/news/security/payouts-king-ransomware-uses-qemu-vms-to-bypass-endpoint-security",
+  "The Hacker News": "https://thehackernews.com/2026/04/three-microsoft-defender-zero-days.html",
   "Aqua Security": "https://www.aquasec.com/blog/unveiling-the-mythos-behind-runtime-security",
   "Krebs on Security": "https://krebsonsecurity.com/2026/04/patch-tuesday-april-2026-edition",
   "StepSecurity": "https://www.stepsecurity.io/blog/announcing-dependabot-configuration-enhancements-cooldown-and-group-support"
