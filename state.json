@@ -1,8 +1,8 @@
 {
   "Helm": "https://helm.sh/blog/helm-4-released",
-  "Bleeping Computer": "https://www.bleepingcomputer.com/news/security/new-lotus-data-wiper-used-against-venezuelan-energy-utility-firms",
-  "The Hacker News": "https://thehackernews.com/2026/04/systembc-c2-server-reveals-1570-victims.html",
+  "Bleeping Computer": "https://www.bleepingcomputer.com/news/microsoft/microsoft-releases-emergency-security-updates-for-critical-aspnet-flaw",
+  "The Hacker News": "https://thehackernews.com/2026/04/mustang-pandas-new-lotuslite-variant.html",
   "Aqua Security": "https://www.aquasec.com/blog/unveiling-the-mythos-behind-runtime-security",
   "Krebs on Security": "https://krebsonsecurity.com/2026/04/scattered-spider-member-tylerb-pleads-guilty",
-  "StepSecurity": "https://www.stepsecurity.io/blog/announcing-dependabot-configuration-enhancements-cooldown-and-group-support"
+  "StepSecurity": "https://www.stepsecurity.io/blog/pgserve-compromised-on-npm-malicious-versions-harvest-credentials"
 }
