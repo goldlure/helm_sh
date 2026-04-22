@@ -1,8 +1,8 @@
 {
   "Helm": "https://helm.sh/blog/helm-4-released",
-  "Bleeping Computer": "https://www.bleepingcomputer.com/news/microsoft/microsoft-releases-emergency-security-updates-for-critical-aspnet-flaw",
-  "The Hacker News": "https://thehackernews.com/2026/04/mustang-pandas-new-lotuslite-variant.html",
-  "Aqua Security": "https://www.aquasec.com/blog/unveiling-the-mythos-behind-runtime-security",
+  "Bleeping Computer": "https://www.bleepingcomputer.com/news/security/apple-fixes-ios-bug-that-retained-deleted-notification-data",
+  "The Hacker News": "https://thehackernews.com/2026/04/malicious-kics-docker-images-and-vs.html",
+  "Aqua Security": "https://www.aquasec.com/blog/autonomous-runtime-security-turning-runtime-intelligence-into-agentic-response",
   "Krebs on Security": "https://krebsonsecurity.com/2026/04/scattered-spider-member-tylerb-pleads-guilty",
-  "StepSecurity": "https://www.stepsecurity.io/blog/pgserve-compromised-on-npm-malicious-versions-harvest-credentials"
+  "StepSecurity": "https://www.stepsecurity.io/blog/teampcp-injects-two-stage-credential-stealer-into-xinference-pypi-package"
 }
