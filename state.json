@@ -1,8 +1,8 @@
 {
   "Helm": "https://helm.sh/blog/helm-4-released",
-  "Bleeping Computer": "https://www.bleepingcomputer.com/news/security/firestarter-malware-survives-cisco-firewall-updates-security-patches",
-  "The Hacker News": "https://thehackernews.com/2026/04/firestarter-backdoor-hit-federal-cisco.html",
+  "Bleeping Computer": "https://www.bleepingcomputer.com/news/security/adt-confirms-data-breach-after-shinyhunters-leak-threat",
+  "The Hacker News": "https://thehackernews.com/2026/04/cisa-adds-4-exploited-flaws-to-kev-sets.html",
   "Aqua Security": "https://www.aquasec.com/blog/autonomous-runtime-security-turning-runtime-intelligence-into-agentic-response",
   "Krebs on Security": "https://krebsonsecurity.com/2026/04/scattered-spider-member-tylerb-pleads-guilty",
-  "StepSecurity": "https://www.stepsecurity.io/blog/bitwarden-cli-hijacked-on-npm-bun-staged-credential-stealer-targets-developers-github-actions-and-ai-tools"
+  "StepSecurity": "https://www.stepsecurity.io/blog/elementary-data-compromised-on-pypi-and-ghcr-forged-release-pushed-via-github-actions-script-injection"
 }
