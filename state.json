@@ -1,8 +1,8 @@
 {
   "Helm": "https://helm.sh/blog/helm-4-released",
-  "Bleeping Computer": "https://www.bleepingcomputer.com/news/security/instructure-confirms-data-breach-shinyhunters-claims-attack",
-  "The Hacker News": "https://thehackernews.com/2026/05/global-crackdown-arrests-276-shuts-9.html",
+  "Bleeping Computer": "https://www.bleepingcomputer.com/news/security/amazon-ses-increasingly-abused-in-phishing-to-evade-detection",
+  "The Hacker News": "https://thehackernews.com/2026/05/phishing-campaign-hits-80-orgs-using.html",
   "Aqua Security": "https://www.aquasec.com/blog/autonomous-runtime-security-turning-runtime-intelligence-into-agentic-response",
   "Krebs on Security": "https://krebsonsecurity.com/2026/04/anti-ddos-firm-heaped-attacks-on-brazilian-isps",
-  "StepSecurity": "https://www.stepsecurity.io/blog/lightning-obfuscated-javascript-credential-stealer-bundled-in-pypi-wheel"
+  "StepSecurity": "https://www.stepsecurity.io/blog/shai-hulud-worm-pivots-to-multi-cloud-intercom-client-hijacked"
 }
