@@ -1,8 +1,8 @@
 {
   "Helm": "https://helm.sh/blog/helm-4-released",
-  "Bleeping Computer": "https://www.bleepingcomputer.com/news/security/hackers-abuse-google-ads-for-godaddy-managewp-login-phishing",
-  "The Hacker News": "https://thehackernews.com/2026/05/pypi-packages-deliver-zichatbot-malware.html",
-  "Aqua Security": "https://www.aquasec.com/blog/autonomous-runtime-security-turning-runtime-intelligence-into-agentic-response",
+  "Bleeping Computer": "https://www.bleepingcomputer.com/news/security/new-pcpjack-worm-steals-credentials-cleans-teampcp-infections",
+  "The Hacker News": "https://thehackernews.com/2026/05/ivanti-epmm-cve-2026-6973-rce-under.html",
+  "Aqua Security": "https://www.aquasec.com/blog/known-techniques-unknown-speed-how-ai-changes-the-attack-chain",
   "Krebs on Security": "https://krebsonsecurity.com/2026/04/anti-ddos-firm-heaped-attacks-on-brazilian-isps",
   "StepSecurity": "https://www.stepsecurity.io/blog/shai-hulud-worm-pivots-to-multi-cloud-intercom-client-hijacked"
 }
