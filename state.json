@@ -1,8 +1,8 @@
 {
   "Helm": "https://helm.sh/blog/helm-4-released",
-  "Bleeping Computer": "https://www.bleepingcomputer.com/news/security/us-charges-suspected-dream-market-admin-arrested-in-germany",
-  "The Hacker News": "https://thehackernews.com/2026/05/new-fragnesia-linux-kernel-lpe-grants.html",
+  "Bleeping Computer": "https://www.bleepingcomputer.com/news/security/hackers-exploit-auth-bypass-flaw-in-burst-statistics-wordpress-plugin",
+  "The Hacker News": "https://thehackernews.com/2026/05/cisco-catalyst-sd-wan-controller-auth.html",
   "Aqua Security": "https://www.aquasec.com/blog/known-techniques-unknown-speed-how-ai-changes-the-attack-chain",
   "Krebs on Security": "https://krebsonsecurity.com/2026/05/patch-tuesday-may-2026-edition",
-  "StepSecurity": "https://www.stepsecurity.io/blog/mini-shai-hulud-is-back-a-self-spreading-supply-chain-attack-hits-the-npm-ecosystem"
+  "StepSecurity": "https://www.stepsecurity.io/blog/node-ipc-npm-supply-chain-attack"
 }
