@@ -1,8 +1,8 @@
 {
   "Helm": "https://helm.sh/blog/helm-4-released",
-  "Bleeping Computer": "https://www.bleepingcomputer.com/news/security/discord-rolls-out-end-to-end-encryption-on-voice-video-calls",
-  "The Hacker News": "https://thehackernews.com/2026/05/trapdoor-android-ad-fraud-scheme-hit.html",
+  "Bleeping Computer": "https://www.bleepingcomputer.com/news/security/github-confirms-breach-of-3-800-repos-via-malicious-vscode-extension",
+  "The Hacker News": "https://thehackernews.com/2026/05/microsoft-releases-mitigation-for.html",
   "Aqua Security": "https://www.aquasec.com/blog/known-techniques-unknown-speed-how-ai-changes-the-attack-chain",
   "Krebs on Security": "https://krebsonsecurity.com/2026/05/cisa-admin-leaked-aws-govcloud-keys-on-github",
-  "StepSecurity": "https://www.stepsecurity.io/blog/microsofts-durabletask-pypi-package-compromised-in-supply-chain-attack"
+  "StepSecurity": "https://www.stepsecurity.io/blog/dev-machine-guard-now-supports-linux"
 }
