@@ -1,8 +1,8 @@
 {
   "Helm": "https://helm.sh/blog/helm-4-released",
-  "Bleeping Computer": "https://www.bleepingcomputer.com/news/security/microsoft-warns-of-new-defender-zero-days-exploited-in-attacks",
-  "The Hacker News": "https://thehackernews.com/2026/05/9-year-old-linux-kernel-flaw-enables.html",
+  "Bleeping Computer": "https://www.bleepingcomputer.com/news/security/google-accidentally-exposed-details-of-unfixed-chromium-flaw",
+  "The Hacker News": "https://thehackernews.com/2026/05/showboat-linux-malware-hits-middle-east.html",
   "Aqua Security": "https://www.aquasec.com/blog/known-techniques-unknown-speed-how-ai-changes-the-attack-chain",
   "Krebs on Security": "https://krebsonsecurity.com/2026/05/cisa-admin-leaked-aws-govcloud-keys-on-github",
-  "StepSecurity": "https://www.stepsecurity.io/blog/5-supply-chain-attacks-in-48-hours-why-securing-one-layer-is-not-enough"
+  "StepSecurity": "https://www.stepsecurity.io/blog/nx-console-vs-code-extension-compromised"
 }
