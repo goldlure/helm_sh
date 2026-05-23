@@ -1,8 +1,8 @@
 {
   "Helm": "https://helm.sh/blog/helm-4-released",
   "Bleeping Computer": "https://www.bleepingcomputer.com/news/security/netherlands-seizes-800-servers-of-hosting-firm-enabling-cyberattacks",
-  "The Hacker News": "https://thehackernews.com/2026/05/first-vpn-dismantled-in-global-takedown.html",
+  "The Hacker News": "https://thehackernews.com/2026/05/litespeed-cpanel-plugin-cve-2026-48172.html",
   "Aqua Security": "https://www.aquasec.com/blog/known-techniques-unknown-speed-how-ai-changes-the-attack-chain",
   "Krebs on Security": "https://krebsonsecurity.com/2026/05/lawmakers-demand-answers-as-cisa-tries-to-contain-data-leak",
-  "StepSecurity": "https://www.stepsecurity.io/blog/megalodon-mass-github-actions-secret-exfiltration-across-5-500-public-repositories"
+  "StepSecurity": "https://www.stepsecurity.io/blog/laravel-lang-supply-chain-attack"
 }
