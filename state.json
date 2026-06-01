@@ -1,8 +1,8 @@
 {
   "Helm": "https://helm.sh/blog/security-notice-baltocdn",
-  "Bleeping Computer": "https://www.bleepingcomputer.com/news/security/wp-maps-pro-bug-exploited-to-create-admin-accounts-on-wordpress-sites",
-  "The Hacker News": "https://thehackernews.com/2026/06/critical-wp-maps-pro-flaw-actively.html",
+  "Bleeping Computer": "https://www.bleepingcomputer.com/news/security/red-hat-npm-packages-compromised-to-steal-developer-credentials",
+  "The Hacker News": "https://thehackernews.com/2026/06/miasma-supply-chain-attack-compromises.html",
   "Aqua Security": "https://www.aquasec.com/blog/known-techniques-unknown-speed-how-ai-changes-the-attack-chain",
-  "Krebs on Security": "https://krebsonsecurity.com/2026/05/netherlands-seizes-800-servers-arrests-2-for-aiding-cyberattacks",
-  "StepSecurity": "https://www.stepsecurity.io/blog/laravel-lang-supply-chain-attack"
+  "Krebs on Security": "https://krebsonsecurity.com/2026/06/hackers-used-metas-ai-support-bot-to-seize-instagram-accounts",
+  "StepSecurity": "https://www.stepsecurity.io/blog/multiple-redhat-cloud-services-npm-packages-compromised"
 }
