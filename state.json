@@ -1,7 +1,7 @@
 {
   "Helm": "https://helm.sh/blog/security-notice-baltocdn",
-  "Bleeping Computer": "https://www.bleepingcomputer.com/news/security/hola-browser-for-windows-compromised-to-deliver-cryptominer",
-  "The Hacker News": "https://thehackernews.com/2026/06/cisco-patches-cve-2026-20230-in-unified.html",
+  "Bleeping Computer": "https://www.bleepingcomputer.com/news/security/new-cisco-sd-wan-flaw-exploited-in-zero-day-attacks-to-gain-root",
+  "The Hacker News": "https://thehackernews.com/2026/06/hackers-exploit-critical-everest-forms.html",
   "Aqua Security": "https://www.aquasec.com/blog/known-techniques-unknown-speed-how-ai-changes-the-attack-chain",
   "Krebs on Security": "https://krebsonsecurity.com/2026/06/hackers-used-metas-ai-support-bot-to-seize-instagram-accounts",
   "StepSecurity": "https://www.stepsecurity.io/blog/binding-gyp-npm-supply-chain-attack-spreads-like-worm"
