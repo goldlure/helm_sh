@@ -1,8 +1,8 @@
 {
   "Helm": "https://helm.sh/blog/security-notice-baltocdn",
-  "Bleeping Computer": "https://www.bleepingcomputer.com/news/security/cisa-orders-feds-to-patch-check-point-flaw-exploited-by-ransomware-gangs",
-  "The Hacker News": "https://thehackernews.com/2026/06/litellm-flaw-cve-2026-42271-exploited.html",
-  "Aqua Security": "https://www.aquasec.com/blog/known-techniques-unknown-speed-how-ai-changes-the-attack-chain",
+  "Bleeping Computer": "https://www.bleepingcomputer.com/news/security/servicenow-discloses-security-incident-exposing-customer-data",
+  "The Hacker News": "https://thehackernews.com/2026/06/meta-to-use-off-site-business-data-for.html",
+  "Aqua Security": "https://www.aquasec.com/blog/how-do-you-measure-fair-risk-in-the-mythos-era",
   "Krebs on Security": "https://krebsonsecurity.com/2026/06/hackers-used-metas-ai-support-bot-to-seize-instagram-accounts",
-  "StepSecurity": "https://www.stepsecurity.io/blog/pythagora-io-gpt-pilot-compromised-on-github-shai-hulud-credential-stealer-blocked-by-python-linter"
+  "StepSecurity": "https://www.stepsecurity.io/blog/new-in-the-threat-center-compromised-components-now-available-via-api"
 }
