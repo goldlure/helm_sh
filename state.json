@@ -1,8 +1,8 @@
 {
   "Helm": "https://helm.sh/blog/security-notice-baltocdn",
-  "Bleeping Computer": "https://www.bleepingcomputer.com/news/security/servicenow-discloses-security-incident-exposing-customer-data",
-  "The Hacker News": "https://thehackernews.com/2026/06/meta-to-use-off-site-business-data-for.html",
+  "Bleeping Computer": "https://www.bleepingcomputer.com/news/microsoft/microsoft-patches-yellowkey-greenplasma-miniplasma-zero-days",
+  "The Hacker News": "https://thehackernews.com/2026/06/anthropic-releases-claude-fable-5-its.html",
   "Aqua Security": "https://www.aquasec.com/blog/how-do-you-measure-fair-risk-in-the-mythos-era",
-  "Krebs on Security": "https://krebsonsecurity.com/2026/06/hackers-used-metas-ai-support-bot-to-seize-instagram-accounts",
+  "Krebs on Security": "https://krebsonsecurity.com/2026/06/a-record-breaking-patch-tuesday-for-june-2026",
   "StepSecurity": "https://www.stepsecurity.io/blog/new-in-the-threat-center-compromised-components-now-available-via-api"
 }
