@@ -1,8 +1,8 @@
 {
-  "Helm": "https://helm.sh/blog/security-notice-baltocdn",
-  "Bleeping Computer": "https://www.bleepingcomputer.com/news/microsoft/microsoft-fixes-bitlocker-recovery-bug-on-windows-server-2025",
-  "The Hacker News": "https://thehackernews.com/2026/06/oceanlotus-hits-vietnam-investors-with.html",
+  "Helm": "https://helm.sh/blog/helm-v3-end-of-life",
+  "Bleeping Computer": "https://www.bleepingcomputer.com/news/security/oracle-mitigates-peoplesoft-zero-day-exploited-in-data-theft-attacks",
+  "The Hacker News": "https://thehackernews.com/2026/06/shinyhunters-exploits-oracle-peoplesoft.html",
   "Aqua Security": "https://www.aquasec.com/blog/how-do-you-measure-fair-risk-in-the-mythos-era",
   "Krebs on Security": "https://krebsonsecurity.com/2026/06/who-runs-the-ransomware-group-the-gentlemen",
-  "StepSecurity": "https://www.stepsecurity.io/blog/new-in-the-threat-center-compromised-components-now-available-via-api"
+  "StepSecurity": "https://www.stepsecurity.io/blog/miasma-and-hades-are-spreading-now-detect-them-on-developer-machines-with-suspicious-files"
 }
