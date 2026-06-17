@@ -1,8 +1,8 @@
 {
   "Helm": "https://helm.sh/blog/helm-v3-end-of-life",
-  "Bleeping Computer": "https://www.bleepingcomputer.com/news/security/new-rokarolla-android-malware-targets-217-banking-crypto-apps",
-  "The Hacker News": "https://thehackernews.com/2026/06/google-vertex-ai-sdk-flaw-let-attackers.html",
+  "Bleeping Computer": "https://www.bleepingcomputer.com/news/security/cisa-orders-feds-to-patch-max-severity-joomla-plugin-flaw-by-friday",
+  "The Hacker News": "https://thehackernews.com/2026/06/malicious-jetbrains-plugins-steal-ai.html",
   "Aqua Security": "https://www.aquasec.com/blog/how-do-you-measure-fair-risk-in-the-mythos-era",
   "Krebs on Security": "https://krebsonsecurity.com/2026/06/who-runs-the-ransomware-group-the-gentlemen",
-  "StepSecurity": "https://www.stepsecurity.io/blog/prevent-npm-and-python-supply-chain-attacks-on-developer-machines-with-package-configs"
+  "StepSecurity": "https://www.stepsecurity.io/blog/mastra-npm-packages-compromised-using-easy-day-js"
 }
