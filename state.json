@@ -1,8 +1,8 @@
 {
   "Helm": "https://helm.sh/blog/helm-v3-end-of-life",
-  "Bleeping Computer": "https://www.bleepingcomputer.com/news/security/cisco-unified-cm-sme-flaw-cve-2026-20230-now-exploited-in-attacks",
-  "The Hacker News": "https://thehackernews.com/2026/06/doj-seizes-huione-cloud-account-tied-to.html",
+  "Bleeping Computer": "https://www.bleepingcomputer.com/news/security/mandiant-reveals-how-cisco-sd-wan-zero-day-attacks-gained-root-access",
+  "The Hacker News": "https://thehackernews.com/2026/06/cisa-warns-critical-lantronix-eds5000.html",
   "Aqua Security": "https://www.aquasec.com/blog/integrate-aqua-and-splunk-for-full-visibility-into-runtime-threats",
   "Krebs on Security": "https://krebsonsecurity.com/2026/06/scattered-spider-hackers-plead-guilty-on-day-1-of-trial",
-  "StepSecurity": "https://www.stepsecurity.io/blog/jetbrains-malicious-plugins-ai-api-key-theft"
+  "StepSecurity": "https://www.stepsecurity.io/blog/supply-chain-compromise-codfish-semantic-release-action"
 }
