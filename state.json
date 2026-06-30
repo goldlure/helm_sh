@@ -1,8 +1,8 @@
 {
   "Helm": "https://helm.sh/blog/helm-v3-end-of-life",
-  "Bleeping Computer": "https://www.bleepingcomputer.com/news/linux/kali-linux-20262-released-with-9-new-tools-nethunter-updates",
-  "The Hacker News": "https://thehackernews.com/2026/06/new-bioshocking-attack-tricks-ai.html",
-  "Aqua Security": "https://www.aquasec.com/blog/integrate-aqua-and-splunk-for-full-visibility-into-runtime-threats",
+  "Bleeping Computer": "https://www.bleepingcomputer.com/news/microsoft/microsoft-accelerates-quantum-safe-roadmap-as-risks-grow",
+  "The Hacker News": "https://thehackernews.com/2026/06/microsoft-warns-poisoned-mcp-tool.html",
+  "Aqua Security": "https://www.aquasec.com/blog/how-do-you-protect-a-workload-you-cannot-afford-to-patch-right-now",
   "Krebs on Security": "https://krebsonsecurity.com/2026/06/scattered-spider-hackers-plead-guilty-on-day-1-of-trial",
   "StepSecurity": "https://www.stepsecurity.io/blog/immobiliarelabs-npm-packages-compromised"
 }
