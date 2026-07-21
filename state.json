@@ -1,8 +1,8 @@
 {
   "Helm": "https://helm.sh/blog/helm-v3-end-of-life",
-  "Bleeping Computer": "https://www.bleepingcomputer.com/news/security/critical-globalprotect-vpn-bug-now-exploited-in-ransomware-attacks",
-  "The Hacker News": "https://thehackernews.com/2026/07/wordpress-wp2shell-exploitation-grows.html",
-  "Aqua Security": "https://www.aquasec.com/blog/when-security-scans-break-the-brain-solving-trivys-etcd-exhaustion-problem",
+  "Bleeping Computer": "https://www.bleepingcomputer.com/news/security/critical-sharepoint-rce-flaw-exploited-to-steal-machine-keys",
+  "The Hacker News": "https://thehackernews.com/2026/07/apple-fixes-hide-my-email-bug-that.html",
+  "Aqua Security": "https://www.aquasec.com/blog/integrate-aqua-and-servicenow-to-prioritize-vulnerabilities-by-runtime-reality",
   "Krebs on Security": "https://krebsonsecurity.com/2026/07/microsoft-patches-a-record-570-security-flaws",
   "StepSecurity": "https://www.stepsecurity.io/blog/sleepergem-compromised-rubygems-drop-persistent-backdoor"
 }
