@@ -1,8 +1,8 @@
 {
   "Helm": "https://helm.sh/blog/helm-v3-end-of-life",
-  "Bleeping Computer": "https://www.bleepingcomputer.com/news/security/upbound-says-hack-caused-13-million-in-fraudulent-acima-leases",
-  "The Hacker News": "https://thehackernews.com/2026/07/github-cuts-public-bug-bounty-payouts.html",
+  "Bleeping Computer": "https://www.bleepingcomputer.com/news/security/new-msarat-malware-uses-chrome-edge-browsers-to-route-c2-traffic",
+  "The Hacker News": "https://thehackernews.com/2026/07/nine-year-old-refluxfs-linux-flaw-gives.html",
   "Aqua Security": "https://www.aquasec.com/blog/integrate-aqua-and-servicenow-to-prioritize-vulnerabilities-by-runtime-reality",
   "Krebs on Security": "https://krebsonsecurity.com/2026/07/lg-to-ban-residential-proxies-from-smart-tv-apps",
-  "StepSecurity": "https://www.stepsecurity.io/blog/sleepergem-compromised-rubygems-drop-persistent-backdoor"
+  "StepSecurity": "https://www.stepsecurity.io/blog/find-unused-stale-and-oidc-replaceable-github-actions-secrets-across-your-github-organization"
 }
