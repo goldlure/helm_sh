@@ -1,8 +1,8 @@
 {
   "Helm": "https://helm.sh/blog/helm-v3-end-of-life",
-  "Bleeping Computer": "https://www.bleepingcomputer.com/news/security/new-doublecup-clickfix-service-hides-malware-in-browser-cache-images",
-  "The Hacker News": "https://thehackernews.com/2026/08/18-malicious-npm-packages-deliver-cross.html",
+  "Bleeping Computer": "https://www.bleepingcomputer.com/news/security/hotel-wi-fi-attacks-use-custom-malware-to-breach-microsoft-365-accounts",
+  "The Hacker News": "https://thehackernews.com/2026/08/new-cpanel-critical-flaw-could-let.html",
   "Aqua Security": "https://www.aquasec.com/blog/what-can-the-world-cup-teach-us-about-stopping-agentic-ai-attacks",
   "Krebs on Security": "https://krebsonsecurity.com/2026/07/read-this-before-you-buy-that-tv-streaming-stick",
-  "StepSecurity": "https://www.stepsecurity.io/blog/anthropic-incident-ai-agent-malicious-package-pypi"
+  "StepSecurity": "https://www.stepsecurity.io/blog/chaindrop-npm-worm"
 }
