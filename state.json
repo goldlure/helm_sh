@@ -1,8 +1,8 @@
 {
   "Helm": "https://helm.sh/blog/helm-v3-end-of-life",
-  "Bleeping Computer": "https://www.bleepingcomputer.com/news/security/city-forum-data-theft-attacks-target-salesforce-servicenow-portals",
+  "Bleeping Computer": "https://www.bleepingcomputer.com/news/security/ukraine-shuts-down-94-fraudulent-call-centers-seize-millions-in-cash",
   "The Hacker News": "https://thehackernews.com/2026/08/attackers-exploit-sharepoint.html",
   "Aqua Security": "https://www.aquasec.com/blog/how-did-aqua-catch-a-cryptomining-attack-hiding-in-memory",
   "Krebs on Security": "https://krebsonsecurity.com/2026/08/microsoft-plugs-nearly-400-security-holes",
-  "StepSecurity": "https://www.stepsecurity.io/blog/control-which-package-registries-your-ci-jobs-and-developer-machines-use"
+  "StepSecurity": "https://www.stepsecurity.io/blog/teampcp-supply-chain-attack-cicd-secrets-cloudsek-disclosure"
 }
