@@ -1,8 +1,8 @@
 {
   "Helm": "https://helm.sh/blog/helm-v3-end-of-life",
-  "Bleeping Computer": "https://www.bleepingcomputer.com/news/microsoft/microsoft-august-windows-updates-may-cause-gaming-issues-reboots",
-  "The Hacker News": "https://thehackernews.com/2026/08/elementor-pro-flaw-could-let.html",
-  "Aqua Security": "https://www.aquasec.com/blog/how-did-aqua-catch-a-cryptomining-attack-hiding-in-memory",
+  "Bleeping Computer": "https://www.bleepingcomputer.com/news/security/hackers-poison-arrayref-rust-crate-to-push-infostealer-malware",
+  "The Hacker News": "https://thehackernews.com/2026/08/suspected-russian-hackers-abuse-google.html",
+  "Aqua Security": "https://www.aquasec.com/blog/integrate-aqua-and-datadog-to-connect-runtime-security-with-application-performance",
   "Krebs on Security": "https://krebsonsecurity.com/2026/08/whos-tracking-you-use-this-new-service-to-find-out",
-  "StepSecurity": "https://www.stepsecurity.io/blog/chaindrop-npm-worm"
+  "StepSecurity": "https://www.stepsecurity.io/blog/arrayref-rust-crate-supply-chain-attack"
 }
