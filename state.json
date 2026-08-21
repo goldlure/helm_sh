@@ -1,7 +1,7 @@
 {
   "Helm": "https://helm.sh/blog/helm-v3-end-of-life",
-  "Bleeping Computer": "https://www.bleepingcomputer.com/news/security/hackers-poison-arrayref-rust-crate-to-push-infostealer-malware",
-  "The Hacker News": "https://thehackernews.com/2026/08/gitlab-cve-2026-19478-comes-under.html",
+  "Bleeping Computer": "https://www.bleepingcomputer.com/news/security/new-synkloader-malware-pushed-in-microsoft-teams-phishing-campaign",
+  "The Hacker News": "https://thehackernews.com/2026/08/14-trojanized-npm-packages-drop-redc2.html",
   "Aqua Security": "https://www.aquasec.com/blog/integrate-aqua-and-datadog-to-connect-runtime-security-with-application-performance",
   "Krebs on Security": "https://krebsonsecurity.com/2026/08/whos-tracking-you-use-this-new-service-to-find-out",
   "StepSecurity": "https://www.stepsecurity.io/blog/arrayref-rust-crate-supply-chain-attack"
