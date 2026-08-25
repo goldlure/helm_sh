@@ -1,8 +1,8 @@
 {
   "Helm": "https://helm.sh/blog/helm-v3-end-of-life",
-  "Bleeping Computer": "https://www.bleepingcomputer.com/news/security/unpatched-calix-flaw-lets-hackers-bypass-nat-to-expose-internal-devices",
-  "The Hacker News": "https://thehackernews.com/2026/08/actively-exploited-oracle-weblogic-flaw.html",
-  "Aqua Security": "https://www.aquasec.com/blog/integrate-aqua-and-datadog-to-connect-runtime-security-with-application-performance",
+  "Bleeping Computer": "https://www.bleepingcomputer.com/news/security/anonymouskit-phaas-uses-voice-ai-agents-to-phish-iphone-passcodes",
+  "The Hacker News": "https://thehackernews.com/2026/08/us-sanctions-iran-linked-hackers-behind.html",
+  "Aqua Security": "https://www.aquasec.com/blog/integrate-aqua-and-vmware-tanzu-to-control-what-happens-in-your-private-cloud",
   "Krebs on Security": "https://krebsonsecurity.com/2026/08/whos-tracking-you-use-this-new-service-to-find-out",
   "StepSecurity": "https://www.stepsecurity.io/blog/state-of-open-source-supply-chain-attacks"
 }
