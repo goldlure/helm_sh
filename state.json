@@ -1,8 +1,8 @@
 {
   "Helm": "https://helm.sh/blog/helm-v3-end-of-life",
-  "Bleeping Computer": "https://www.bleepingcomputer.com/news/security/critical-avada-wordpress-theme-flaw-enables-zero-click-rce",
-  "The Hacker News": "https://thehackernews.com/2026/08/fbi-disrupts-china-linked-qtfy.html",
+  "Bleeping Computer": "https://www.bleepingcomputer.com/news/security/papercut-warns-of-ng-mf-flaw-exploited-in-zero-day-attacks",
+  "The Hacker News": "https://thehackernews.com/2026/08/nextjs-patches-critical-avif-and.html",
   "Aqua Security": "https://www.aquasec.com/blog/integrate-aqua-and-vmware-tanzu-to-control-what-happens-in-your-private-cloud",
-  "Krebs on Security": "https://krebsonsecurity.com/2026/08/whos-tracking-you-use-this-new-service-to-find-out",
-  "StepSecurity": "https://www.stepsecurity.io/blog/state-of-open-source-supply-chain-attacks"
+  "Krebs on Security": "https://krebsonsecurity.com/2026/08/two-alleged-teampcp-hackers-arrested-in-australia",
+  "StepSecurity": "https://www.stepsecurity.io/blog/dev-machine-guard-now-inventories-where-developer-credentials-live"
 }
