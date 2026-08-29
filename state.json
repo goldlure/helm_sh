@@ -1,8 +1,8 @@
 {
   "Helm": "https://helm.sh/blog/helm-v3-end-of-life",
-  "Bleeping Computer": "https://www.bleepingcomputer.com/news/security/papercut-releases-second-emergency-patch-for-exploited-flaws",
-  "The Hacker News": "https://thehackernews.com/2026/08/attackers-chain-two-papercut-flaws-to.html",
+  "Bleeping Computer": "https://www.bleepingcomputer.com/news/security/mckesson-discloses-breach-after-shinyhunters-claims-patient-data-theft",
+  "The Hacker News": "https://thehackernews.com/2026/08/berlin-refuses-to-pay-hackers-who-stole.html",
   "Aqua Security": "https://www.aquasec.com/blog/integrate-aqua-and-vmware-tanzu-to-control-what-happens-in-your-private-cloud",
   "Krebs on Security": "https://krebsonsecurity.com/2026/08/two-alleged-teampcp-hackers-arrested-in-australia",
-  "StepSecurity": "https://www.stepsecurity.io/blog/dev-machine-guard-now-inventories-where-developer-credentials-live"
+  "StepSecurity": "https://www.stepsecurity.io/blog/7nohe-openapi-react-query-codegen-compromised-npm-publishing-workflow"
 }
