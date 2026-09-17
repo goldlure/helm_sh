@@ -1,7 +1,7 @@
 {
   "Helm": "https://helm.sh/blog/helm-v3-end-of-life",
-  "Bleeping Computer": "https://www.bleepingcomputer.com/news/microsoft/windows-11-kb5124008-update-breaks-domain-trust-for-some-users",
-  "The Hacker News": "https://thehackernews.com/2026/09/attackers-exploit-issabel-framework.html",
+  "Bleeping Computer": "https://www.bleepingcomputer.com/news/security/what-recent-ai-powered-attacks-mean-for-your-identity-security",
+  "The Hacker News": "https://thehackernews.com/2026/09/critical-unbound-dnssec-validator-flaw.html",
   "Aqua Security": "https://www.aquasec.com/blog/why-is-detection-and-response-too-slow-for-machine-speed-attacks",
   "Krebs on Security": "https://krebsonsecurity.com/2026/09/data-broker-radaris-loses-domains-in-privacy-fight",
   "StepSecurity": "https://www.stepsecurity.io/blog/runtime-security-for-aws-codebuild-hosted-github-actions-runners"
