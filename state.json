@@ -1,8 +1,8 @@
 {
   "Helm": "https://helm.sh/blog/helm-v3-end-of-life",
-  "Bleeping Computer": "https://www.bleepingcomputer.com/news/security/placeholder-domain-used-in-dev-docs-now-serves-clickfix-attacks",
-  "The Hacker News": "https://thehackernews.com/2026/09/attackers-use-malicious-terraform.html",
-  "Aqua Security": "https://www.aquasec.com/blog/why-is-detection-and-response-too-slow-for-machine-speed-attacks",
+  "Bleeping Computer": "https://www.bleepingcomputer.com/news/security/critical-roundcube-flaw-now-actively-exploited-in-code-injection-attacks",
+  "The Hacker News": "https://thehackernews.com/2026/09/corp-mdm-spyware-targets-logistics.html",
+  "Aqua Security": "https://www.aquasec.com/blog/fewer-findings-faster-answers-how-activestate-and-trivy-turn-a-scan-into-a-verdict",
   "Krebs on Security": "https://krebsonsecurity.com/2026/09/data-broker-radaris-loses-domains-in-privacy-fight",
   "StepSecurity": "https://www.stepsecurity.io/blog/sckit-supply-chain-worm-hits-memtensor-npm-pypi-scopes"
 }
