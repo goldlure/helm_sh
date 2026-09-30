@@ -1,8 +1,8 @@
 {
   "Helm": "https://helm.sh/blog/helm-v3-end-of-life",
-  "Bleeping Computer": "https://www.bleepingcomputer.com/news/security/signal-adds-encypted-local-backup-support-to-ios-desktop-apps",
-  "The Hacker News": "https://thehackernews.com/2026/09/french-tax-data-theft-using-stolen.html",
-  "Aqua Security": "https://www.aquasec.com/blog/fewer-findings-faster-answers-how-activestate-and-trivy-turn-a-scan-into-a-verdict",
+  "Bleeping Computer": "https://www.bleepingcomputer.com/news/security/cisco-warns-of-new-sd-wan-authentication-bypass-zero-day-exploited-in-attacks",
+  "The Hacker News": "https://thehackernews.com/2026/09/cisco-warns-of-attackers-exploiting.html",
+  "Aqua Security": "https://www.aquasec.com/blog/supply-chain-security-has-the-operating-model-backwards",
   "Krebs on Security": "https://krebsonsecurity.com/2026/09/dutch-police-arrest-reformed-hacker-in-shiny-hunters-investigation",
   "StepSecurity": "https://www.stepsecurity.io/blog/sckit-supply-chain-worm-hits-memtensor-npm-pypi-scopes"
 }
