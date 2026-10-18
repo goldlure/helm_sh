@@ -1,8 +1,8 @@
 {
   "Helm": "https://helm.sh/blog/helm-v3-end-of-life",
-  "Bleeping Computer": "https://www.bleepingcomputer.com/news/security/hackers-breach-microsoft-365-tenants-via-connectwise-supply-chain-attack",
+  "Bleeping Computer": "https://www.bleepingcomputer.com/news/security/hackers-exploit-siteguard-waf-flaw-to-run-commands-as-system-root",
   "The Hacker News": "https://thehackernews.com/2026/10/connectwise-suspends-cloud-backup-after.html",
   "Aqua Security": "https://www.aquasec.com/blog/japans-cyber-emergency-is-a-warning-for-the-world",
   "Krebs on Security": "https://krebsonsecurity.com/2026/10/u-k-sanctions-cryptomus-for-ru-money-laundering",
-  "StepSecurity": "https://www.stepsecurity.io/blog/ghostaction-returns"
+  "StepSecurity": "https://www.stepsecurity.io/blog/opencode-security-breach"
 }
