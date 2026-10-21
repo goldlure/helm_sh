@@ -1,8 +1,8 @@
 {
   "Helm": "https://helm.sh/blog/helm-v3-end-of-life",
-  "Bleeping Computer": "https://www.bleepingcomputer.com/news/security/php-warns-admins-of-two-critical-flaws-emergency-patches-coming-tomorrow",
-  "The Hacker News": "https://thehackernews.com/2026/10/eight-emudhra-ca-keys-compromised.html",
+  "Bleeping Computer": "https://www.bleepingcomputer.com/news/security/php-ships-emergency-patches-for-critical-php2shell-flaws",
+  "The Hacker News": "https://thehackernews.com/2026/10/google-chrome-adds-clickfix-warnings-to.html",
   "Aqua Security": "https://www.aquasec.com/blog/how-do-financial-institutions-measure-and-control-cyber-risk",
   "Krebs on Security": "https://krebsonsecurity.com/2026/10/feds-suspect-ransom-negotiator-ran-shinyhunters-extortion-site",
-  "StepSecurity": "https://www.stepsecurity.io/blog/opencode-security-breach"
+  "StepSecurity": "https://www.stepsecurity.io/blog/litellm-1-107-0-compromised-pypi-backdoored-wheels-credential-stealer"
 }
