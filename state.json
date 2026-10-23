@@ -1,7 +1,7 @@
 {
   "Helm": "https://helm.sh/blog/helm-v3-end-of-life",
-  "Bleeping Computer": "https://www.bleepingcomputer.com/news/security/railway-warns-devs-to-rotate-secrets-after-potential-breach",
-  "The Hacker News": "https://thehackernews.com/2026/10/the-ai-agent-nobody-owns-watch-expert.html",
+  "Bleeping Computer": "https://www.bleepingcomputer.com/news/security/hpe-patches-eight-max-severity-rce-and-auth-bypass-aos-flaws",
+  "The Hacker News": "https://thehackernews.com/2026/10/urgent-php-warns-of-another-unpatched.html",
   "Aqua Security": "https://www.aquasec.com/blog/php2shell-how-to-protect-vulnerable-php-workloads-while-patching",
   "Krebs on Security": "https://krebsonsecurity.com/2026/10/widespread-php-flaw-may-cause-many-site-outages-today",
   "StepSecurity": "https://www.stepsecurity.io/blog/emudhra-emsign-ca-compromise-python-pip-ci-cd-update"
