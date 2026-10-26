@@ -1,8 +1,8 @@
 {
   "Helm": "https://helm.sh/blog/helm-v3-end-of-life",
-  "Bleeping Computer": "https://www.bleepingcomputer.com/news/security/ai-coding-agents-hijacked-using-agentsmd-file-in-downloads-folder",
-  "The Hacker News": "https://thehackernews.com/2026/10/unpatched-tailscale-ssh-flaws-could-let.html",
+  "Bleeping Computer": "https://www.bleepingcomputer.com/news/microsoft/microsoft-releases-emergency-net-patches-for-critical-brotli-flaw",
+  "The Hacker News": "https://thehackernews.com/2026/10/weekly-recap-this2shell-that2shell.html",
   "Aqua Security": "https://www.aquasec.com/blog/php2shell-how-to-protect-vulnerable-php-workloads-while-patching",
   "Krebs on Security": "https://krebsonsecurity.com/2026/10/widespread-php-flaw-may-cause-many-site-outages-today",
-  "StepSecurity": "https://www.stepsecurity.io/blog/ovhcloud-cli-github-release-swap-glassworm"
+  "StepSecurity": "https://www.stepsecurity.io/blog/litellm-1-107-0-compromised-pypi-backdoored-wheels-credential-stealer"
 }
