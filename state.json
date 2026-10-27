@@ -1,8 +1,8 @@
 {
   "Helm": "https://helm.sh/blog/helm-v3-end-of-life",
-  "Bleeping Computer": "https://www.bleepingcomputer.com/news/security/university-of-copenhagen-data-breach-exposes-data-of-525-000-people",
-  "The Hacker News": "https://thehackernews.com/2026/10/hackers-infect-953-online-stores-with.html",
-  "Aqua Security": "https://www.aquasec.com/blog/php2shell-how-to-protect-vulnerable-php-workloads-while-patching",
+  "Bleeping Computer": "https://www.bleepingcomputer.com/news/security/tailscale-warns-of-serious-ssh-flaws-allowing-root-privilege-escalation",
+  "The Hacker News": "https://thehackernews.com/2026/10/microsoft-authenticator-flaw-let.html",
+  "Aqua Security": "https://www.aquasec.com/blog/http2shell-vulnerability-how-should-security-teams-assess-and-reduce-exposure",
   "Krebs on Security": "https://krebsonsecurity.com/2026/10/widespread-php-flaw-may-cause-many-site-outages-today",
-  "StepSecurity": "https://www.stepsecurity.io/blog/litellm-1-107-0-compromised-pypi-backdoored-wheels-credential-stealer"
+  "StepSecurity": "https://www.stepsecurity.io/blog/stepsecurity-now-inventories-ai-agent-plugins-in-your-github-repositories-and-on-developer-machines"
 }
