@@ -1,8 +1,8 @@
 {
   "Helm": "https://helm.sh/blog/helm-v3-end-of-life",
-  "Bleeping Computer": "https://www.bleepingcomputer.com/news/security/malicious-claude-code-extension-on-cursor-planted-ssh-backdoors",
-  "The Hacker News": "https://thehackernews.com/2026/10/trezor-warns-of-suspected-hardware.html",
+  "Bleeping Computer": "https://www.bleepingcomputer.com/news/security/critical-linux-kernel-flaw-allows-remote-root-attacks-on-mptcp-servers",
+  "The Hacker News": "https://thehackernews.com/2026/10/chinese-hackers-use-ai-powered-artex-to.html",
   "Aqua Security": "https://www.aquasec.com/blog/integrate-aquasec-and-prometheus-for-greater-visibility-into-runtime-security-operations",
   "Krebs on Security": "https://krebsonsecurity.com/2026/10/widespread-php-flaw-may-cause-many-site-outages-today",
-  "StepSecurity": "https://www.stepsecurity.io/blog/claude-code-extension-trojanized"
+  "StepSecurity": "https://www.stepsecurity.io/blog/binance-hack-developer-machine-security"
 }
