@@ -1,8 +1,8 @@
 {
   "Helm": "https://helm.sh/blog/helm-v3-end-of-life",
-  "Bleeping Computer": "https://www.bleepingcomputer.com/news/security/northflank-security-breach-leads-to-abuse-of-customers-ai-api-keys",
-  "The Hacker News": "https://thehackernews.com/2026/10/chainalysis-confirms-intrusion-into.html",
+  "Bleeping Computer": "https://www.bleepingcomputer.com/news/security/alpine-linux-rebuilds-gitlab-after-attempted-rce-attack",
+  "The Hacker News": "https://thehackernews.com/2026/11/critical-lxd-and-microcloud-flaw-cvss.html",
   "Aqua Security": "https://www.aquasec.com/blog/integrate-aquasec-and-prometheus-for-greater-visibility-into-runtime-security-operations",
   "Krebs on Security": "https://krebsonsecurity.com/2026/10/widespread-php-flaw-may-cause-many-site-outages-today",
-  "StepSecurity": "https://www.stepsecurity.io/blog/binance-hack-developer-machine-security"
+  "StepSecurity": "https://www.stepsecurity.io/blog/claude-code-extension-trojanized"
 }
