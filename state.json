@@ -1,8 +1,8 @@
 {
   "Helm": "https://helm.sh/blog/helm-v3-end-of-life",
-  "Bleeping Computer": "https://www.bleepingcomputer.com/news/security/chinese-hackers-use-artex-ai-in-automated-attacks-against-200-orgs",
-  "The Hacker News": "https://thehackernews.com/2026/11/weekly-recap-critical-cves-linux-ddos.html",
+  "Bleeping Computer": "https://www.bleepingcomputer.com/news/security/barracuda-warns-of-critical-flaws-allowing-root-access-to-devices",
+  "The Hacker News": "https://thehackernews.com/2026/11/google-warns-llmjacking-attacks-are.html",
   "Aqua Security": "https://www.aquasec.com/blog/integrate-aquasec-and-prometheus-for-greater-visibility-into-runtime-security-operations",
   "Krebs on Security": "https://krebsonsecurity.com/2026/11/tech-firms-dismantle-botnet-that-turned-1-3m-tv-boxes-into-proxies",
-  "StepSecurity": "https://www.stepsecurity.io/blog/claude-code-extension-trojanized"
+  "StepSecurity": "https://www.stepsecurity.io/blog/malicious-files-find-what-supply-chain-attacks-leave-behind-in-your-github-repositories-and-on-developer-machines"
 }
