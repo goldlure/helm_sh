@@ -1,8 +1,8 @@
 {
   "Helm": "https://helm.sh/blog/helm-v3-end-of-life",
-  "Bleeping Computer": "https://www.bleepingcomputer.com/news/security/vercel-rolls-out-new-protection-against-stolen-session-cookie-attacks",
-  "The Hacker News": "https://thehackernews.com/2026/11/debian-and-ubuntu-apt-flaw-lets-mitm.html",
+  "Bleeping Computer": "https://www.bleepingcomputer.com/news/security/hackers-backdoor-linux-servers-using-trojanized-cwp-web-server",
+  "The Hacker News": "https://thehackernews.com/2026/11/threatsday-apache-ofbiz-rce-dreamhost.html",
   "Aqua Security": "https://www.aquasec.com/blog/integrate-aquasec-and-prometheus-for-greater-visibility-into-runtime-security-operations",
-  "Krebs on Security": "https://krebsonsecurity.com/2026/11/tech-firms-dismantle-botnet-that-turned-1-3m-tv-boxes-into-proxies",
-  "StepSecurity": "https://www.stepsecurity.io/blog/malicious-files-find-what-supply-chain-attacks-leave-behind-in-your-github-repositories-and-on-developer-machines"
+  "Krebs on Security": "https://krebsonsecurity.com/2026/11/want-to-rent-an-internet-address-at-the-white-house",
+  "StepSecurity": "https://www.stepsecurity.io/blog/cve-2026-109518-apt-package-swap-root"
 }
