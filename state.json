@@ -1,8 +1,8 @@
 {
   "Helm": "https://helm.sh/blog/helm-v3-end-of-life",
-  "Bleeping Computer": "https://www.bleepingcomputer.com/news/security/fbi-cisa-warn-of-cyberattacks-targeting-refrigeration-systems",
-  "The Hacker News": "https://thehackernews.com/2026/11/openssh-issues-emergency-fix-for-flaw.html",
-  "Aqua Security": "https://www.aquasec.com/blog/integrate-aquasec-and-prometheus-for-greater-visibility-into-runtime-security-operations",
+  "Bleeping Computer": "https://www.bleepingcomputer.com/news/security/veeam-software-appliance-vms-fail-to-boot-on-amd-epyc-hosts",
+  "The Hacker News": "https://thehackernews.com/2026/11/microsoft-paint-rce-fix-now-available.html",
+  "Aqua Security": "https://www.aquasec.com/blog/integrate-aquasec-and-jenkins-to-stop-unsafe-images-before-they-run",
   "Krebs on Security": "https://krebsonsecurity.com/2026/11/want-to-rent-an-internet-address-at-the-white-house",
   "StepSecurity": "https://www.stepsecurity.io/blog/cve-2026-109518-apt-package-swap-root"
 }
