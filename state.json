@@ -1,8 +1,8 @@
 {
   "Helm": "https://helm.sh/blog/helm-v3-end-of-life",
-  "Bleeping Computer": "https://www.bleepingcomputer.com/news/security/critical-xen-orchestra-auth-bypass-flaw-exploited-to-hijack-vm-servers",
-  "The Hacker News": "https://thehackernews.com/2026/11/attackers-exploit-ahsaycbs-flaws-to.html",
+  "Bleeping Computer": "https://www.bleepingcomputer.com/news/apple/railway-breach-leads-to-740-000-in-fraudulent-ai-charges",
+  "The Hacker News": "https://thehackernews.com/2026/11/git-patches-flaw-that-lets-malicious.html",
   "Aqua Security": "https://www.aquasec.com/blog/ai-agent-security-banking-runtime",
-  "Krebs on Security": "https://krebsonsecurity.com/2026/11/want-to-rent-an-internet-address-at-the-white-house",
-  "StepSecurity": "https://www.stepsecurity.io/blog/ethersphere-bee-js-13-3-0-compromise"
+  "Krebs on Security": "https://krebsonsecurity.com/2026/11/microsoft-fixes-nearly-1100-security-vulnerabilities",
+  "StepSecurity": "https://www.stepsecurity.io/blog/railway-security-incident-cicd-runtime-security"
 }
