@@ -1,8 +1,8 @@
 {
   "Helm": "https://helm.sh/blog/helm-v3-end-of-life",
-  "Bleeping Computer": "https://www.bleepingcomputer.com/news/security/fbi-warns-artex-ai-hacking-tool-is-powering-global-cyberattacks",
-  "The Hacker News": "https://thehackernews.com/2026/11/italy-fines-meta-805-million-over.html",
+  "Bleeping Computer": "https://www.bleepingcomputer.com/news/microsoft/microsoft-says-months-old-bug-caused-global-microsoft-365-outage",
+  "The Hacker News": "https://thehackernews.com/2026/11/google-finds-hackers-using-ai-agents-to.html",
   "Aqua Security": "https://www.aquasec.com/blog/ai-agent-security-banking-runtime",
   "Krebs on Security": "https://krebsonsecurity.com/2026/11/who-runs-the-ransomware-group-qilin",
-  "StepSecurity": "https://www.stepsecurity.io/blog/accurasofthire-fake-interview-developer-machines"
+  "StepSecurity": "https://www.stepsecurity.io/blog/artex-ai-pentesting-tool-attackers-leaked-secrets"
 }
