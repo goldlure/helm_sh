@@ -1,8 +1,8 @@
 {
   "Helm": "https://helm.sh/blog/helm-v3-end-of-life",
-  "Bleeping Computer": "https://www.bleepingcomputer.com/news/security/optimizely-supply-chain-attack-infects-major-brands-sites-with-malware",
-  "The Hacker News": "https://thehackernews.com/2026/11/google-finds-hackers-using-ai-agents-to.html",
-  "Aqua Security": "https://www.aquasec.com/blog/ai-agent-security-banking-runtime",
+  "Bleeping Computer": "https://www.bleepingcomputer.com/news/security/tor-releases-emergency-update-amid-ongoing-ddos-attack",
+  "The Hacker News": "https://thehackernews.com/2026/11/hackers-found-way-around-github-sha.html",
+  "Aqua Security": "https://www.aquasec.com/blog/ironworm-ebpf-rootkit-ghostmap-linux",
   "Krebs on Security": "https://krebsonsecurity.com/2026/11/who-runs-the-ransomware-group-qilin",
   "StepSecurity": "https://www.stepsecurity.io/blog/wppconnect-compromised-malicious-releases-steal-secrets-and-whatsapp-sessions"
 }
