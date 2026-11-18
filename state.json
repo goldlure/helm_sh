@@ -1,8 +1,8 @@
 {
   "Helm": "https://helm.sh/blog/helm-v3-end-of-life",
-  "Bleeping Computer": "https://www.bleepingcomputer.com/news/security/tor-releases-emergency-update-amid-ongoing-ddos-attack",
-  "The Hacker News": "https://thehackernews.com/2026/11/hackers-found-way-around-github-sha.html",
-  "Aqua Security": "https://www.aquasec.com/blog/ironworm-ebpf-rootkit-ghostmap-linux",
+  "Bleeping Computer": "https://www.bleepingcomputer.com/news/security/critical-java4shell-flaw-allows-rce-attacks-on-major-java-applications",
+  "The Hacker News": "https://thehackernews.com/2026/11/researchers-claim-two-rce-exploits-that.html",
+  "Aqua Security": "https://www.aquasec.com/blog/java4shell-vulnerability-how-should-security-teams-identify-and-reduce-exposure",
   "Krebs on Security": "https://krebsonsecurity.com/2026/11/who-runs-the-ransomware-group-qilin",
-  "StepSecurity": "https://www.stepsecurity.io/blog/wppconnect-compromised-malicious-releases-steal-secrets-and-whatsapp-sessions"
+  "StepSecurity": "https://www.stepsecurity.io/blog/microsoft-agent-framework-pypi-package-compromised"
 }
