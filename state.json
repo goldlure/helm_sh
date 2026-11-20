@@ -1,8 +1,8 @@
 {
   "Helm": "https://helm.sh/blog/helm-v3-end-of-life",
-  "Bleeping Computer": "https://www.bleepingcomputer.com/news/security/vmware-patches-vcenter-zero-day-exploited-in-attacks-since-september",
-  "The Hacker News": "https://thehackernews.com/2026/11/threatsday-gpt-62-jailbreak-flaws.html",
+  "Bleeping Computer": "https://www.bleepingcomputer.com/news/security/vendor-data-breach-exposes-chase-visa-mastercard-customer-info",
+  "The Hacker News": "https://thehackernews.com/2026/11/bazuka-android-malware-uses-fake-screen.html",
   "Aqua Security": "https://www.aquasec.com/blog/nginx-http2-vulnerabilities-affected-images",
   "Krebs on Security": "https://krebsonsecurity.com/2026/11/attackers-used-optimizely-to-a-b-test-malware-on-top-websites",
-  "StepSecurity": "https://www.stepsecurity.io/blog/cve-2026-123007-nginx-http2-rce"
+  "StepSecurity": "https://www.stepsecurity.io/blog/optimjack-optimizely-hosted-scripts-crypto-clipper-card-skimmer"
 }
