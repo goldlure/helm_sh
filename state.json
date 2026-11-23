@@ -1,8 +1,8 @@
 {
   "Helm": "https://helm.sh/blog/helm-v3-end-of-life",
-  "Bleeping Computer": "https://www.bleepingcomputer.com/news/security/hackers-exploit-glinet-cloud-flaw-to-infect-routers-kvm-devices",
-  "The Hacker News": "https://thehackernews.com/2026/11/openrouter-drops-3-providers-after.html",
-  "Aqua Security": "https://www.aquasec.com/blog/nginx-http2-vulnerabilities-affected-images",
+  "Bleeping Computer": "https://www.bleepingcomputer.com/news/security/south-koreas-power-giant-kepco-confirms-data-breach-impacting-15-million",
+  "The Hacker News": "https://thehackernews.com/2026/11/webworm-suspected-of-modifying.html",
+  "Aqua Security": "https://www.aquasec.com/blog/ai-runtime-security-in-kubernetes-how-do-you-prove-enforcement-works",
   "Krebs on Security": "https://krebsonsecurity.com/2026/11/cto-of-ransomwarehelp-indicted-for-wire-fraud",
-  "StepSecurity": "https://www.stepsecurity.io/blog/optimjack-optimizely-hosted-scripts-crypto-clipper-card-skimmer"
+  "StepSecurity": "https://www.stepsecurity.io/blog/cve-2026-123007-nginx-http2-rce"
 }
