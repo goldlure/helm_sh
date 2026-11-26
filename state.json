@@ -1,8 +1,8 @@
 {
   "Helm": "https://helm.sh/blog/helm-v3-end-of-life",
-  "Bleeping Computer": "https://www.bleepingcomputer.com/news/security/cisa-warns-of-critical-unpatched-flaw-in-danfoss-refrigeration-controllers",
+  "Bleeping Computer": "https://www.bleepingcomputer.com/news/security/palo-alto-networks-warns-of-fragnesia-flaw-exploited-in-pan-os-attacks",
   "The Hacker News": "https://thehackernews.com/2026/11/hackers-exploit-two-geoserver-flaws-as.html",
   "Aqua Security": "https://www.aquasec.com/blog/ai-runtime-security-in-kubernetes-how-do-you-prove-enforcement-works",
   "Krebs on Security": "https://krebsonsecurity.com/2026/11/cto-of-ransomwarehelp-indicted-for-wire-fraud",
-  "StepSecurity": "https://www.stepsecurity.io/blog/accurasofthire-fake-interview-developer-machines"
+  "StepSecurity": "https://www.stepsecurity.io/blog/polinrider-malware-open-source-pull-requests"
 }
